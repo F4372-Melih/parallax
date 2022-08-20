@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.8rem;
+  color: #666;
+  height: 100%;
+}
+
+.first_img {
+  background-image: url("https://mark-mad.github.io/parallax-website/assets/bg.jpg");
+}
+.second_img {
+  background-image: url("https://mark-mad.github.io/parallax-website/assets/bg2.jpg");
+}
+.third_img {
+  background-image: url("https://mark-mad.github.io/parallax-website/assets/bg3.jpg");
+}
+.fourth_img {
+  background-image: url("https://mark-mad.github.io/parallax-website/assets/bg4.jpg");
+}
+.fifth_img {
+  background-image: url("https://mark-mad.github.io/parallax-website/assets/bg.jpg");
+}
+
+img {
+  width: 20rem;
+}
+
+.first_img,
+.second_img,
+.third_img,
+.fourth_img,
+.fifth_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.7;
+  position: relative;
+  background-attachment: fixed;
+}
+
+header {
+  background-color: black;
+  border-top-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  padding: 2rem;
+  width: fit-content;
+  text-align: center;
+  outline-offset: 1rem;
+  outline: 0.5rem inset purple;
+  line-height: 5rem;
+}
+
+h1 {
+  font-size: 3rem;
+  color: white;
+  letter-spacing: 0.5rem;
+}
+
+.section_first,
+.section_second,
+.section_third,
+.section_fourth {
+  padding: 2rem;
+  text-align: center;
+  position: sticky;
+}
+
+.section_first,
+.section_third {
+  background-color: rgb(241, 241, 241);
+  color: #666;
+}
+
+.section_second,
+.section_fourth {
+  background-color: #282e34;
+  color: #ddd;
+}
+
+h2 {
+  margin: 2rem;
+}
+
+section {
+  display: block;
+}
+
+@media (max-width: 568px) {
+  .first_img,
+  .second_img,
+  .third_img,
+  .fourth_img,
+  .fifth_img {
+    background-attachment: scroll;
+  }
+}
